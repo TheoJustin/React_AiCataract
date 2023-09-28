@@ -13,7 +13,7 @@ function Home() {
                 <a href='#tes'>Hospitals</a>
                 <a href='#tes'>About Us</a>
             </li>
-            <li><h1>Mata Sehat: Platform Pendeteksi Katarak</h1></li>
+            <li><h1>Mata Sehat</h1></li>
         </ul>
 
         <div className='content'>
