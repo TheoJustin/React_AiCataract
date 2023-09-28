@@ -17,7 +17,7 @@ function Home() {
         </ul>
 
         <div className='content'>
-            <h1>Gejala Katarak yang perlu diketahui</h1>
+            <h1>Gejala</h1>
             <div className='cataract-img'>
                 <img src={cataract} alt="Cataract" />
                 <img src={normal} alt="Cataract" />
