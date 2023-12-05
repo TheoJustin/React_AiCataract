@@ -28,6 +28,11 @@ function Home() {
                 <li>Double vision.</li>
             </ul>
         </div>
+
+        <div className="info">
+            <h1>How to Treat Cataract?</h1>
+            <p>Cataracts can be removed only with surgery.<br/><br/>If your cataract symptoms are not bothering you very much, you don’t have to remove a cataract. You might just need a new eyeglass prescription to help you see better. You should consider surgery when cataracts keep you from doing things you want or need to do.</p>
+        </div>
     </div>
   );
 }
