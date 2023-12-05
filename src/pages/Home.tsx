@@ -3,11 +3,13 @@ import cataract from '../assets/image_251.png';
 import normal from '../assets/image_256.png';
 import {NavigationBar} from "../components/Navbar/NavigationBar";
 import Detector from "../components/Detector/Detector";
+import Header from '../components/Header/Header';
 
 function Home() {
   return (
     <div className="home">
         <NavigationBar />
+        <Header />
         <Detector />
 
         <div className="what-is-cataract info">

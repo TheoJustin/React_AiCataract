@@ -1,0 +1,49 @@
+.header-container{
+    display: flex;
+    margin: 2vw 15vw;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        z-index: -999;
+    }
+    .e1{
+        position: absolute;
+        margin-left: 50vw;
+        margin-bottom: 1vw;
+    }
+    .e2{
+        width: 25vw;
+        height: 25vw;
+        margin-left: 53vw;
+        margin-top: 0;
+        position: absolute;
+    }
+    .e3{
+        width: 24vw;
+        height: 24vw;
+        position: absolute;
+        margin-left: 37vw;
+        z-index: -9999;
+        margin-top: 10vw;
+    }
+    .header-text{
+        width: 50%;
+        p{
+            margin: 0;
+            text-align: justify;
+        }
+        h1{
+            margin: 0;
+            font-weight: bold;
+            font-size: 2.5rem;
+
+        }
+    }
+
+    .header-image{
+        .image{
+            width: 20vw;
+            height: 20vw;
+        }
+    }
+}
