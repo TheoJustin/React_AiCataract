@@ -44,12 +44,14 @@
 
 .result-cont{
   .result-text{
-
+    h2{
+      font-weight: bold;
+    }
   }
 
   p{
     cursor: pointer;
-
+    color: rgba(128, 128, 128, 0.9);
     &:hover{
       text-decoration: underline;
     }

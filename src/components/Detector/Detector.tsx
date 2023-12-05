@@ -101,14 +101,13 @@ const Detector: React.FC = () => {
                 <div className="row g-0 mx-5 my-5">
                     <div className="col-md-4 animation">
                         {imagePreview && (
-                            // Display the image preview if available
                             <img src={imagePreview} className="img-fluid rounded-3 mb-3" alt="Selected Eye" />
                         )}
                     </div>
 
                     <div className="col-md-8 result-cont">
                         <div className="result-text ms-5 mt-5">
-                            <h2>Prediction: {result?.prediction}</h2>
+                            <h2>Prediction: <span className={result?.prediction === "Normal" ? "text-success" : "text-warning" }>{result?.prediction}</span></h2>
                             <h2>Accuracy: {result?.prediction_accuracy}%</h2>
                         </div>
 
