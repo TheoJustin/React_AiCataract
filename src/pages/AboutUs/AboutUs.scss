@@ -1,0 +1,25 @@
+@import "../App";
+
+.what-we-do-container{
+  padding: 3vw 15vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.what-we-do-header{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+
+.what-we-do-text{
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  margin-bottom: 15vh;
+}
+
+.img-container{
+  display: flex;
+  flex-direction: row;
+}

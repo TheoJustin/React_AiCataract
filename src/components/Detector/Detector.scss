@@ -1,0 +1,57 @@
+@import "../../pages/App";
+.text-cont{
+  width: fit-content;
+  display: grid;
+  place-items: center;
+}
+.text{
+  width: 100%;
+  animation: typing 4s steps(35) infinite, blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-size: large;
+  font-weight: bolder;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+.animation{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-label{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.card-cont{
+  margin: 5vw 15vw;
+}
+
+.result-cont{
+  .result-text{
+
+  }
+
+  p{
+    cursor: pointer;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../pages/App';
+
+.img-container-team{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.5vw;
+  box-sizing: border-box;
+
+  .team-img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1vw;
+  }
+
+  .team-name{
+    font-size: 1em;
+    font-weight: bolder;
+  }
+}

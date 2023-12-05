@@ -7,9 +7,9 @@ import Logo from '../../assets/logo.png'
 export const NavigationBar = () => {
     return(
         <>
-            <Navbar bg="light" variant="light" className="navbar">
-                <Container className="mx-3 my-2">
-                    <Navbar.Brand as={Link} to={"/"} className="navbar-brand">
+            <Navbar variant="light" className="navbar navbar-expand-lg container-fluid sticky-top">
+                <Container className="mx-5 my-2">
+                    <Navbar.Brand as={Link} to={"/"} className="navbar-brand me-4">
                         <img
                             alt=""
                             src={Logo}
@@ -22,6 +22,7 @@ export const NavigationBar = () => {
 
                     <Nav className="me-auto">
                         <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+                        <Nav.Link as={Link} to={"/about-us"}>About Us</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
