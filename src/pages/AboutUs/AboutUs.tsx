@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import "./AboutUs.scss";
-import candy from "../../assets/dummy-image-square.jpg";
-import vella from "../../assets/dummy-image-square.jpg";
-import carissa from "../../assets/dummy-image-square.jpg";
-import theo from "../../assets/dummy-image-square.jpg";
-import jose from "../../assets/dummy-image-square.jpg";
-import jordan from "../../assets/dummy-image-square.jpg";
+import candy from "../../assets/candy_0.jpg";
+import vella from "../../assets/vella_0.jpg";
+import carissa from "../../assets/carissa_0.jpg";
+import theo from "../../assets/theo_0.jpg";
+import jose from "../../assets/jose_0.jpg";
+import jordan from "../../assets/jordan_0.jpg";
 import TeamImage from "../../components/TeamImage/TeamImage";
 import {NavigationBar} from "../../components/Navbar/NavigationBar";
+import Eclipse from '../../assets/eclipse.png'
 
 const AboutUs = () => {
     return (
         <div>
             <NavigationBar />
+            {/*<img className="eclipse" src={Eclipse} alt="" />*/}
             <div className="what-we-do-container">
                 <div className="what-we-do-header">What we do</div>
                 <div className="what-we-do-text">

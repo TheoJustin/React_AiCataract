@@ -4,13 +4,16 @@ import normal from '../assets/image_256.png';
 import {NavigationBar} from "../components/Navbar/NavigationBar";
 import Detector from "../components/Detector/Detector";
 import Header from '../components/Header/Header';
+import {useRef} from "react";
 
-function Home() {
+const Home: React.FC = () =>  {
+    const detectorRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="home">
         <NavigationBar />
-        <Header />
-        <Detector />
+        <Header detectorRef={detectorRef}/>
+        <Detector detectorRef={detectorRef}/>
 
         <div className="what-is-cataract info">
             <h1>What is cataract?</h1>

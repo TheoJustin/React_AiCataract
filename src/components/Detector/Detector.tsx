@@ -1,4 +1,4 @@
-import {ChangeEvent, FormEvent, useEffect, useState} from "react";
+import {ChangeEvent, FormEvent, useEffect, useRef, useState} from "react";
 import React from "react";
 import {Button, Card, Form} from "react-bootstrap";
 import CataractImg from '../../assets/image_251.png'
@@ -9,11 +9,16 @@ interface ResultProps {
     prediction_accuracy: number;
 }
 
-const Detector: React.FC = () => {
+interface DetectorProps {
+    detectorRef: React.RefObject<HTMLDivElement>;
+}
+
+const Detector: React.FC<DetectorProps> = ({ detectorRef }) => {
     const [ isDone, setIsDone ] =  useState(false);
     const [imagePreview, setImagePreview] = useState<string | null>(null);
     const [result, setResult] = useState<ResultProps | null>(null);
     const [file, setFile] = useState<File | null>(null);
+
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -58,7 +63,7 @@ const Detector: React.FC = () => {
     };
 
     if(!isDone){
-        return <div>
+        return <div ref={detectorRef}>
             {/*<form onSubmit={handleSubmit}>*/}
             {/*    <input*/}
             {/*        type="file"*/}
@@ -96,7 +101,7 @@ const Detector: React.FC = () => {
     }
 
     return (
-        <div>
+        <div ref={detectorRef}>
            <Card className="rounded-4 card-cont shadow border-0">
                 <div className="row g-0 mx-5 my-5">
                     <div className="col-md-4 animation">

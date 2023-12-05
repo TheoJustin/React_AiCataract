@@ -38,6 +38,19 @@
             font-size: 2.5rem;
 
         }
+
+        button{
+            display: flex;
+            align-items: center;
+            .icon{
+                margin-left: 0.5vw;
+            }
+
+            transition: all ease-in-out 150ms;
+            &:hover{
+                scale: 1.05;
+            }
+        }
     }
 
     .header-image{
