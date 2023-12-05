@@ -17,7 +17,7 @@ export const NavigationBar = () => {
                             height="40"
                             className="d-inline-block align-top me-3"
                         />
-                        Cataract Detector
+                        OptiScan
                     </Navbar.Brand>
 
                     <Nav className="me-auto">
